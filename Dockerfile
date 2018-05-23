@@ -9,7 +9,7 @@ COPY ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
 COPY ./open_basedir.ini /usr/local/etc/php/conf.d/open_basedir.ini
 
 # Move the settings to the right place & configure for Apache to use
-RUN mv /var/www/html/test-settings /tmp/test-settings
+RUN mv /var/www/html/test-settings /tmp/addl-settings
 RUN cat ./envvars >> /etc/apache2/envvars
 
 # Enable modules and restart Apache
