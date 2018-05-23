@@ -1,0 +1,8 @@
+version: "2.1"
+
+services:  
+  web:
+    build: .
+    image: runwaytest_web
+    ports:
+      - "80:80"
